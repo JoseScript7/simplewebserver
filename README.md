@@ -22,8 +22,8 @@ Testing the webserver.
 
 ## PROGRAM:
 from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
-
+content = 
+"""
 <html lang="eng">
     <title>pcproject</title>
     <body bgcolor="cyan">
@@ -49,6 +49,7 @@ content = """
     }
 </style>
 """
+
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
